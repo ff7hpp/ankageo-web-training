@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personnel Management</title>
+    <link rel="stylesheet" href="info.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <section class="form-section">
+
+            <h1>Add Personnel</h1>
+
+            <form>
+
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Enter name">
+                </div>
+
+                <div class="form-group">
+                    <label for="surname">Surname:</label>
+                    <input type="text" id="surname" placeholder="Enter surname">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Enter email">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" placeholder="Enter phone number">
+                </div>
+
+                <div class="form-group">
+                    <label for="department">Department:</label>
+
+                    <select id="department">
+                        <option value="">Select Department</option>
+                        <option value="software">Software</option>
+                        <option value="gis">GIS</option>
+                        <option value="it">IT</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="location">Location:</label>
+                    <input type="text" id="location" placeholder="Enter your location">
+                </div>
+
+                <div class="form-group">
+                    <label for="year">Year:</label>
+
+                    <select id="year">
+                        <option value="">Select Year</option>
+                        <option value="2026">2026</option>
+                        <option value="2025">2025</option>
+                        <option value="2024">2024</option>
+                    </select>
+                </div>
+
+                <button type="submit">Add Person</button>
+
+            </form>
+
+        </section>
+
+
+        <section class="table-section">
+
+            <h2>Personnel List</h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Surname</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Department</th>
+                        <th>Location</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>john@example.com</td>
+                        <td>5551234567</td>
+                        <td>Software</td>
+                        <td>Ankara</td>
+                        <td>2026</td>
+                    </tr>
+
+                    <tr>
+                        <td>Jane</td>
+                        <td>Smith</td>
+                        <td>jane@example.com</td>
+                        <td>5559876543</td>
+                        <td>GIS</td>
+                        <td>Istanbul</td>
+                        <td>2025</td>
+                    </tr>
+
+                    <tr>
+                        <td>Ali</td>
+                        <td>Saad</td>
+                        <td>ali@example.com</td>
+                        <td>0532234563</td>
+                        <td>IT</td>
+                        <td>Ankara</td>
+                        <td>2026</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
