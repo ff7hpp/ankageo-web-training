@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+.facebook-page {
+    min-height: 100vh;
+    display: flex;
+}
+
+.left-side {
+    width: 57%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 0.1rem solid #ddd;
+    overflow: hidden;
+}
+
+.facebook-image {
+    width: 95%;
+    height: 95vh;
+    object-fit: contain;
+}
+
+.right-side {
+    width: 43%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    width: 72%;
+}
+
+.login-box h2 {
+    font-size: 1.5rem;
+    margin-bottom: 5%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+input {
+    width: 100%;
+    padding: 4%;
+    font-size: 1rem;
+    border: 0.1rem solid #ccd0d5;
+    border-radius: 1rem;
+}
+
+input:focus {
+    border-color: #0866ff;
+    outline: 0.15rem solid #0866ff;
+}
+
+button {
+    width: 100%;
+    padding: 3.5%;
+    border: none;
+    border-radius: 2rem;
+    background-color: #0866ff;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #075ce0;
+}
+
+.forgot {
+    display: block;
+    margin-top: 4%;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.forgot:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: none;
+    border-top: 0.1rem solid #ddd;
+    margin: 11% 0 6%;
+}
+
+.create {
+    display: block;
+    width: 100%;
+    padding: 3%;
+    border: 0.1rem solid #0866ff;
+    border-radius: 2rem;
+    text-align: center;
+    text-decoration: none;
+    color: #0866ff;
+    font-size: 1rem;
+}
+
+.create:hover {
+    background-color: #f5f9ff;
+}
+
+.meta {
+    margin-top: 6%;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 55em) {
+    .facebook-page {
+        flex-direction: column;
+    }
+
+    .left-side {
+        width: 100%;
+        min-height: 50vh;
+        border-right: none;
+        border-bottom: 0.1rem solid #ddd;
+    }
+
+    .facebook-image {
+        width: 80%;
+        height: auto;
+    }
+
+    .right-side {
+        width: 100%;
+        min-height: 50vh;
+        padding: 8% 0;
+    }
+
+    .login-box {
+        width: 85%;
+    }
+}
