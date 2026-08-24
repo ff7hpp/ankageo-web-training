@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+.welcome-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #000000, #075ce0);
+}
+
+.welcome-card {
+    width: min(90%, 34rem);
+    padding: 4rem 3rem;
+    border-radius: 1rem;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.welcome-card h1 {
+    color: #0866ff;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.welcome-card p {
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+.welcome-card a {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    border-radius: 2rem;
+    background-color: #0866ff;
+    color: white;
+    text-decoration: none;
+}

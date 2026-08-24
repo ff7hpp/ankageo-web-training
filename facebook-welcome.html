@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Facebook</title>
+    <link rel="stylesheet" href="facebook-welcome.css">
+</head>
+<body>
+    <main class="welcome-page">
+        <section class="welcome-card">
+            <h1 id="welcome-title">Welcome to Facebook</h1>
+            <p>You have logged in successfully.</p>
+            <a href="facebook-login.html">Back to login</a>
+        </section>
+    </main>
+
+    <script>
+        const name = new URLSearchParams(window.location.search).get('name');
+        if (name) {
+            document.querySelector('#welcome-title').textContent = `Welcome, ${name}, to Facebook`;
+        }
+    </script>
+</body>
+</html>

@@ -11,7 +11,7 @@
 
         <section class="left-side">
             <div class="left content">
-                <img src="/photos/Screenshot 2026-08-19 104600.png" alt="">
+                <img class="facebook-image" src="photos/Screenshot 2026-08-19 104600.png" alt="Facebook illustration">
             </div>
         </section>
 
@@ -19,21 +19,21 @@
             <div class="login-box">
                 <h2>log in to facebook</h2>
 
-                <form>
-                    <input type="email" placeholder="Enter your Email" required>
+                <form id="facebook-login-form">
+                    <input id="facebook-email" type="email" placeholder="Enter your Email" required>
                     <input type="password" placeholder="Enter your password" required>
                     <button type="submit">Log in</button>
                 </form>
 
-                <a href="#" class="forget"> i forget my password </a>
+                <a href="#" class="forgot">I forgot my password</a>
                 <hr>
-                <a href="#" class="creat"> Create your new Account</a>
+                <a href="#" class="create">Create your new Account</a>
             </div>
 
         </section>
 
 
     </main>
-    
+    <script src="facebook-login.js"></script>
 </body>
 </html>
