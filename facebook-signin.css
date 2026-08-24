@@ -1,0 +1,9 @@
+@import url("facebook-login.css");
+
+.login-box h2 {
+    color: #0866ff;
+}
+
+.create {
+    display: block;
+}
