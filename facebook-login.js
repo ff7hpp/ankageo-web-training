@@ -1,10 +1,11 @@
-const loginForm = document.querySelector('#facebook-login-form');
+const form = document.querySelector("#facebook-login-form");
 
-loginForm.addEventListener('submit', (event) => {
+form.onsubmit = function(event) {
     event.preventDefault();
 
-    const email = document.querySelector('#facebook-email').value;
-    const name = email.split('@')[0] || 'User';
+    const email = document.querySelector("#facebook-email").value;
 
-    window.location.href = `facebook-welcome.html?name=${encodeURIComponent(name)}`;
-});
+    const name = email.split("@")[0];
+
+    window.location.href = "facebook-welcome.html?name=" + name;
+};
