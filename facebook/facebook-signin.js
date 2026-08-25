@@ -5,5 +5,5 @@ form.onsubmit = function(event) {
 
     const name = document.querySelector("#facebook-name").value;
 
-    window.location.href = "facebook-welcome.html?name=" + name;
+    window.location.href = "facebook-welcome.html?name=" + encodeURIComponent(name);
 };
